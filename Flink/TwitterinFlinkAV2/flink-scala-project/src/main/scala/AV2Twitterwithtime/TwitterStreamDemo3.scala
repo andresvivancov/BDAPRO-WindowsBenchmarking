@@ -64,10 +64,10 @@ class TwitterStreamGenerator(filterTerms: String*) extends SourceFunction[Tweet]
   override def run(ctx: SourceContext[Tweet]): Unit = {
     val cb = new ConfigurationBuilder
     cb.setDebugEnabled(true)
-      .setOAuthConsumerKey("X0k4zycdWOV4UT0QuU7gLUdiU")
-      .setOAuthConsumerSecret("nq42UJ75jVhYTHOsmpRfHFdanXOj9qreAvP5OzaWw6Gt38MGnU")
-      .setOAuthAccessToken("1206314257-gPBrxJk1FoeHovE5I0CO0QKhDqIry5pXkenRlUW")
-      .setOAuthAccessTokenSecret("UM262OPTvNQ4INwleQh4jRVV1ZqLWAKMgR86a8GTVJDcM")
+      .setOAuthConsumerKey("X0k4zycdWOV4Ud0QuU7gLUdiU")
+      .setOAuthConsumerSecret("nq42UJ75zaWw6Gt38MGnU")
+      .setOAuthAccessToken("1206314257-gPBrIry5pXkenRlUW")
+      .setOAuthAccessTokenSecret("UM262qLWAKMgR86a8GTVJDcM")
 
     val stream: TwitterStream = new TwitterStreamFactory(cb.build()).getInstance()
 
